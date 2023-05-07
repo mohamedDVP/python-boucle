@@ -2,6 +2,8 @@
 def display_list(ma_liste: list):
     for i in ma_liste:
         print(str(i))
+    #for index, value in enumerate(ma_liste):
+        #print("à l'index " + str(index) + ", se situe la valeur " + str(value))
 
 #En python, les str sont egalement des tableau. des tableau de caractères
 #Avec cette information, afficher chaque lettre d'une phrase donnée en parametre
