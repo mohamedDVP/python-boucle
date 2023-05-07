@@ -1,6 +1,6 @@
 # On vous donne une list n, parcourez cette liste et affichez ses valeurs
 def display_list(ma_liste: list):
-    print("TODO")
+    print("TODo")
 
 
 #En python, les str sont egalement des tableau. des tableau de caractères
