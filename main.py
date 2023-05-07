@@ -8,7 +8,8 @@ def display_list(ma_liste: list):
 #En python, les str sont egalement des tableau. des tableau de caractères
 #Avec cette information, afficher chaque lettre d'une phrase donnée en parametre
 def display_word_str(un_mot : str):
-    print("TODO")
+    for i in un_mot:
+        print(str(i))
 
 # Completez la fonction afin qu'elle puisse nous afficher les 100 premiers nombres entiers
 def display_hundred_int():
@@ -41,3 +42,5 @@ def factorielle():
 if __name__ == "__main__":
     ma_liste: list = [15, 30, 45]
     display_list(ma_liste)
+
+display_word_str("tarte au citron")
