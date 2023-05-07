@@ -1,6 +1,6 @@
 # On vous donne une list n, parcourez cette liste et affichez ses valeurs
 def display_list(ma_liste: list):
-    for i in range(len(ma_liste)):
+    for i in ma_liste:
         print(str(i))
 
 #En python, les str sont egalement des tableau. des tableau de caractères
