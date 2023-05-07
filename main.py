@@ -11,9 +11,11 @@ def display_word_str(un_mot : str):
     for i in un_mot:
         print(str(i))
 
+
 # Completez la fonction afin qu'elle puisse nous afficher les 100 premiers nombres entiers
 def display_hundred_int():
-    print("TODO")
+    for i in range(0, 100):
+        print(str(i))
 
 
 # generez des nombres random, ajoutez les dans un tableau et faites la moyenne des notes.
@@ -40,7 +42,5 @@ def factorielle():
     print("TODO")
 
 if __name__ == "__main__":
-    ma_liste: list = [15, 30, 45]
-    display_list(ma_liste)
+    display_hundred_int()
 
-display_word_str("tarte au citron")
