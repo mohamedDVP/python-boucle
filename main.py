@@ -1,7 +1,7 @@
 # On vous donne une list n, parcourez cette liste et affichez ses valeurs
 def display_list(ma_liste: list):
-    print("TODo")
-
+    for i in range(len(ma_liste)):
+        print(str(i))
 
 #En python, les str sont egalement des tableau. des tableau de caractères
 #Avec cette information, afficher chaque lettre d'une phrase donnée en parametre
@@ -35,3 +35,7 @@ def table_multiplication():
 # Pour rappel, la factorielle de 5 vaux (1*2*3*4*5)
 def factorielle():
     print("TODO")
+
+if __name__ == "__main__":
+    ma_liste: list = [15, 30, 45]
+    display_list(ma_liste)
