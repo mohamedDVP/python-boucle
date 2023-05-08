@@ -1,3 +1,6 @@
+import random
+
+
 # On vous donne une list n, parcourez cette liste et affichez ses valeurs
 def display_list(ma_liste: list):
     for i in ma_liste:
@@ -21,7 +24,26 @@ def display_hundred_int():
 # generez des nombres random, ajoutez les dans un tableau et faites la moyenne des notes.
 # Si la note, est en dessous de 10 (exclu), affichez "Non admin", sinon, "admin"
 def mention_moyenne():
-    print("TODO")
+    liste_note: list = []
+    saisie_continue: bool = True
+    while(saisie_continue):
+        choix_utilisateur = input("Saisissez yes ou no : ")
+        if choix_utilisateur == "no":
+            saisie_continue = False
+        else:
+            note: float = random.uniform(0, 20)
+            liste_note.append(note)
+    if len(liste_note) == 0:
+        print("non admis")
+    else:
+        somme: float = 0
+        for i in liste_note:
+            somme += i # somme = somme + 1
+        resultat: float = somme / len(liste_note)
+        if resultat < 10:
+            print("non admis")
+        else:
+            print("admis")
 
 
 # Affichez le nombre de voyelle que comporte un mot saisie par l'utilisateur
@@ -42,5 +64,5 @@ def factorielle():
     print("TODO")
 
 if __name__ == "__main__":
-    display_hundred_int()
+    mention_moyenne()
 
